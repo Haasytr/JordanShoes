@@ -19,4 +19,8 @@ export const Container = styled.div`
       height: 150px
     }
   }
+
+  @media(max-width: 350px) {
+    padding: 0;
+  }
 `;
