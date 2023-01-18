@@ -33,7 +33,7 @@ function Login() {
           </header>
           <form onSubmit={handleSubmit} action='#' >
             <label>E-mail</label>
-            <input type="email" name="email" placeholder='Seu email...' required />
+            <input type="email" name="email" placeholder='Email...' required />
 
             <label>Senha</label>
             <input type="password" name="password" placeholder='*********' required />

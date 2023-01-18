@@ -16,7 +16,7 @@ export const Container = styled.div`
 
     img {
        width: 180px;
-      height: 150px
+      height: 150px;
     }
   }
 
