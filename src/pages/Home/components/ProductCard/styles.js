@@ -11,16 +11,17 @@ export const Container = styled.div`
     background-color: #f3f1f2;
   }
 
-  @media (max-width: 1790px) and (min-width: 769px) {
-    padding: 1.5rem 2rem;
-
-    img {
-       width: 180px;
-      height: 150px;
-    }
+  @media (max-width: 300px) {
+    padding: 0px;
   }
 
-  @media(max-width: 350px) {
-    padding: 0;
+  @media (min-width: 300px) and (max-width: 769px) {
+    padding: 3.5rem 2.5rem;
+  }
+
+  @media (min-width: 769px) and (max-width: 1300px) {
+    > img {
+      height: 85%;
+    }
   }
 `;

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Container, LoginContainer, Button, Actions, Footer, LoginBox } from './styles';
+import { Container, BackgroundContainer, LoginContainer, Button, Actions, Footer, LoginBox } from './styles';
 import LoginBackground from '../../assets/login/login-bg.png';
 import GoogleLogo from '../../assets/login/google-logo.svg';
 import { useNavigate } from 'react-router-dom';
@@ -24,7 +24,9 @@ function Login() {
 
   return (
     <Container>
-      <img src={LoginBackground} alt='' />
+      <BackgroundContainer>
+        <img src={LoginBackground} alt='' />
+      </BackgroundContainer>
       <LoginContainer>
         <LoginBox>
           <header>

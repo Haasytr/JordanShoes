@@ -3,30 +3,39 @@ import styled from 'styled-components';
 const colors = {
   green: "#04C35C",
   white: "#FFF",
+  white200: "#F7FAFC",
   gray: "#1A202C",
 }
 
 
 export const Container = styled.div`
   height: 100vh;
-  padding: 1.5rem;
 
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+    @media (max-width: 750px) {
+      grid-template-columns: 1fr;
+    }
+`;
+
+export const BackgroundContainer = styled.div`
+  background-color: ${colors.white200};
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
 
-  @media (max-width: 768px) {
-    > img {
-      display: none;
-    }
+  @media (max-width: 750px) {
+    display: none;
   }
-`;
+`
 
 export const LoginContainer = styled.div`
   height: 100%;
   display: flex;
   justify-content: center;
   flex-direction: column;
+  align-items: center;
 
   font-family: "Lato", sans-serif;
 `
@@ -48,6 +57,7 @@ export const LoginBox = styled.div`
   }
 
   form {
+    max-width: 350px;
     display: flex;
     flex-direction: column;
     gap: 0.8rem;
@@ -60,7 +70,6 @@ export const LoginBox = styled.div`
 
     > input {
       height: 50px;
-      width: 350px;
       
       font-size: 0.875rem;
       

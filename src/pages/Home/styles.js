@@ -121,7 +121,11 @@ export const ShoesList = styled.div`
   gap: 1.25rem;
   margin: 3rem 0;
 
-  @media (max-width: 769px) {
+  @media (max-width: 750px) {
     grid-template-columns: 1fr;
+  }
+
+  @media (min-width: 750px) and (max-width: 1500px) {
+    grid-template-columns: repeat(2, 1fr);
   }
 `
